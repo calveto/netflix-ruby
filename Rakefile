@@ -8,7 +8,7 @@ Rake::TestTask.new("test:unit") { |t|
   t.test_files = Dir.glob( "test/*_test.rb" ).sort
 
   t.verbose = true
-  t.warning = true
+  #t.warning = true
 }
 require File.join(File.dirname(__FILE__), 'test/integration/rake_test_helper')
 
@@ -43,4 +43,6 @@ end
 task :release => :build do
   system "gem push bundler-#{Netflix::VERSION}"
 end
+
+task :default => :test
 
