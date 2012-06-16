@@ -8,7 +8,7 @@ Rake::TestTask.new("test:unit") { |t|
   t.test_files = Dir.glob( "test/*_test.rb" ).sort
 
   t.verbose = true
-  #t.warning = true
+  t.warning = false
 }
 require File.join(File.dirname(__FILE__), 'test/integration/rake_test_helper')
 
