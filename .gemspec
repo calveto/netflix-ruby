@@ -24,5 +24,6 @@ Gem::Specification.new do |s|
   s.add_dependency("json")
   s.add_dependency("launchy")
   s.add_development_dependency("fakeweb")
+  s.add_development_dependency("rake")
 end
 
